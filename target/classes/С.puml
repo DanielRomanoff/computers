@@ -1,0 +1,14 @@
+@startuml
+    class Tablet{
+       private String expansion; //расширение экрана
+       private String GHz;
+       private String OS;
+       public Tablet(String price, String model, String color, String expansion, String GHz, String OS) {
+       public String getExpansion() {
+       public void setExpansion(String expansion) {
+       public String getGHz() {
+       public void setGHz(String GHz) {
+       public String getOS() {
+       public void setOS(String OS) {
+   }
+@enduml

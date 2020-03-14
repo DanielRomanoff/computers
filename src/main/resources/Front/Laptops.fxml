@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LaptopsController">
+    <children>
+        <Text layoutX="137.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose your laptop">
+            <font>
+                <Font name="Consolas Bold" size="33.0" />
+            </font>
+        </Text>
+        <AnchorPane layoutY="53.0" prefHeight="293.0" prefWidth="600.0" style="-fx-background-color: white;">
+            <children>
+                <ImageView fx:id="MSIGT75" fitHeight="112.0" fitWidth="191.0" layoutX="19.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Images/MSI%20GT75.jpg" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+                <ImageView fx:id="ASUSROGZephyrus" fitHeight="118.0" fitWidth="185.0" layoutX="212.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Images/ASUS%20ROG%20Zephyrus.jpg" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+                <ImageView fx:id="AppleMacBookPro" fitHeight="118.0" fitWidth="175.0" layoutX="404.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Images/Apple%20MacBook%20Pro.jpg" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+                <Text layoutX="81.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSI GT75">
+                    <font>
+                        <Font name="Consolas Bold" size="15.0" />
+                    </font>
+                </Text>
+                <Text layoutX="222.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ASUS ROG Zephyrus S">
+                    <font>
+                        <Font name="Consolas Bold" size="15.0" />
+                    </font>
+                </Text>
+                <Text layoutX="421.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apple MacBook Pro">
+                    <font>
+                        <Font name="Consolas Bold" size="15.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="516.0" layoutY="11.0" prefHeight="33.0" prefWidth="69.0" style="-fx-background-color: WHITE;">
+            <children>
+                <Text fx:id="backButton" layoutX="12.0" layoutY="23.0" onMouseClicked="#backToPrevScene" strokeType="OUTSIDE" strokeWidth="0.0" text="Back">
+                    <font>
+                        <Font name="Consolas Bold" size="21.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Text>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

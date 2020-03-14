@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TypeController">
+    <children>
+        <Text layoutX="155.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose your item">
+            <font>
+                <Font name="Consolas Bold" size="33.0" />
+            </font>
+        </Text>
+      <AnchorPane layoutY="53.0" prefHeight="293.0" prefWidth="600.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fx:id="Desktops" fitHeight="150.0" fitWidth="200.0" layoutX="61.0" layoutY="60.0" onMouseClicked="#desktopType" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/DesktopType.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="Tablets" fitHeight="150.0" fitWidth="200.0" layoutX="250.0" layoutY="60.0" onMouseClicked="#tabletType" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/TabletType.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="Laptops" fitHeight="119.0" fitWidth="143.0" layoutX="417.0" layoutY="80.0" onMouseClicked="#laptopType" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/LaptopType.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text layoutX="60.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desktops">
+               <font>
+                  <Font name="Consolas Bold" size="26.0" />
+               </font>
+            </Text>
+            <Text layoutX="250.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tablets">
+               <font>
+                  <Font name="Consolas Bold" size="26.0" />
+               </font>
+            </Text>
+            <Text layoutX="438.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Laptops">
+               <font>
+                  <Font name="Consolas Bold" size="26.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

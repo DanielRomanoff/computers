@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TabletsController">
+    <children>
+        <Text layoutX="136.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose your tablet">
+            <font>
+                <Font name="Consolas Bold" size="33.0" />
+            </font>
+        </Text>
+        <AnchorPane layoutY="53.0" prefHeight="293.0" prefWidth="600.0" style="-fx-background-color: white;">
+            <children>
+                <ImageView fx:id="AppleiPadPro" fitHeight="150.0" fitWidth="150.0" layoutX="31.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Images/Apple%20iPad%20Pro.jpg" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+                <ImageView fx:id="SamsungGalaxyTab" fitHeight="150.0" fitWidth="200.0" layoutX="251.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Images/Samsung%20Galaxy%20Tab.jpg" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+                <ImageView fx:id="SamsungGalaxyS5E" fitHeight="150.0" fitWidth="157.0" layoutX="441.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Images/Samsung%20Galaxy%20Tab2.jpg" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+                <Text layoutX="48.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apple iPad Pro">
+                    <font>
+                        <Font name="Consolas Bold" size="15.0" />
+                    </font>
+                </Text>
+                <Text layoutX="226.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Samsung Galaxy Tab">
+                    <font>
+                        <Font name="Consolas Bold" size="15.0" />
+                    </font>
+                </Text>
+                <Text layoutX="413.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Samsung Galaxy S5e">
+                    <font>
+                        <Font name="Consolas Bold" size="15.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="516.0" layoutY="11.0" prefHeight="33.0" prefWidth="69.0" style="-fx-background-color: WHITE;">
+            <children>
+                <Text fx:id="backButton" layoutX="12.0" layoutY="23.0" onMouseClicked="#backToPrevScene" strokeType="OUTSIDE" strokeWidth="0.0" text="Back">
+                    <font>
+                        <Font name="Consolas Bold" size="21.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Text>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

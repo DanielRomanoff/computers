@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.StartController">
+   <children>
+      <ImageView fitHeight="270.0" fitWidth="600.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/welcomeLogo.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="374.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightblue;">
+         <children>
+            <Text layoutX="27.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome,">
+               <font>
+                  <Font name="Consolas Bold" size="33.0" />
+               </font>
+            </Text>
+            <TextField fx:id="userNameField" alignment="CENTER" layoutX="24.0" layoutY="76.0" prefHeight="32.0" prefWidth="150.0" text="username">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Consolas" size="25.0" />
+               </font>
+            </TextField>
+            <AnchorPane layoutX="64.0" layoutY="145.0" prefHeight="33.0" prefWidth="69.0" style="-fx-background-color: WHITE;" />
+            <Text fx:id="enterButton" layoutX="70.0" layoutY="167.0" onMouseClicked="#enterUser" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter">
+               <font>
+                  <Font name="Consolas Bold" size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Text layoutX="91.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COMPUTER SHOP mindGAMES">
+         <font>
+            <Font name="Consolas Bold" size="33.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="67.0" layoutY="61.0" prefHeight="6.0" prefWidth="465.0" style="-fx-background-color: black;" />
+      <ImageView fx:id="item2" fitHeight="67.0" fitWidth="58.0" layoutX="269.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/item.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="item1" fitHeight="34.0" fitWidth="36.0" layoutX="198.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/item.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

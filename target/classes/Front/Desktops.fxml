@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.DesktopsController">
+    <children>
+        <Text layoutX="128.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose your desktop">
+            <font>
+                <Font name="Consolas Bold" size="33.0" />
+            </font>
+        </Text>
+        <AnchorPane layoutY="53.0" prefHeight="293.0" prefWidth="600.0" style="-fx-background-color: white;">
+            <children>
+                <ImageView fx:id="acerPredatorOrion" fitHeight="150.0" fitWidth="200.0" layoutX="61.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Images/cer%20Predator%20Orion%209000%20PO9-900.jpg" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+                <ImageView fx:id="DellAlienwareAurora" fitHeight="150.0" fitWidth="200.0" layoutX="254.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Images/Dell%20Alienware%20Aurora.png" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+                <ImageView fx:id="DEXPJupiter" fitHeight="150.0" fitWidth="157.0" layoutX="413.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Images/DEXP%20Jupiter.jpg" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+                <Text layoutX="35.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acer Predator Orion">
+                    <font>
+                        <Font name="Consolas Bold" size="15.0" />
+                    </font>
+                </Text>
+            <Text layoutX="213.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dell Alienware Aurora">
+               <font>
+                  <Font name="Consolas Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="439.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DEXP Jupiter">
+               <font>
+                  <Font name="Consolas Bold" size="15.0" />
+               </font>
+            </Text>
+            </children>
+        </AnchorPane>
+      <AnchorPane layoutX="516.0" layoutY="11.0" prefHeight="33.0" prefWidth="69.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Text fx:id="backButton" layoutX="12.0" layoutY="23.0" onMouseClicked="#backToPrevScene" strokeType="OUTSIDE" strokeWidth="0.0" text="Back">
+               <font>
+                  <Font name="Consolas Bold" size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
